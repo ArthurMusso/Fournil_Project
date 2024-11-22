@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.7.1-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="commandes.html">Commandes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="contact.php" method="POST" class="contact-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Sujet :</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fournil de la Treille. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

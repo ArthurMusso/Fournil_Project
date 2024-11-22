@@ -1,0 +1,450 @@
+/* Image de fond globale */
+body {
+    background-image: url('../images/image.png'); /* Mise à jour du chemin vers l'image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff; /* Texte par défaut en blanc */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+
+/* Couche semi-transparente pour les textes */
+.text-container {
+    background: rgba(0, 0, 0, 0.6); /* Couche noire semi-transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* En-tête */
+header {
+    background: rgba(42, 42, 42, 0.9); /* Couleur sombre avec opacité */
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    margin: 0;
+    color: #d4af37;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #f9f7f3;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #d4af37;
+    color: #2a2a2a;
+    transform: scale(1.1);
+}
+
+/* Section principale */
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ajustement pour le formulaire de contact */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2a2a2a;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #d4af37;
+    color: #2a2a2a;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #2a2a2a;
+    color: #d4af37;
+    transform: translateY(-3px);
+}
+
+/* Boutons généraux */
+button {
+    background: #d4af37;
+    color: #2a2a2a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2a2a2a;
+    color: #d4af37;
+}
+
+/* Footer */
+footer {
+    background: rgba(42, 42, 42, 0.9); /* Couleur sombre avec opacité */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+}
+/* Section d'informations pratiques */
+.info-section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.info-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-details div {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 0;
+}
+
+.info-details h3 {
+    font-size: 1.5em;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.info-details p {
+    font-size: 1em;
+    color: #666;
+}
+/* Section des options de commande */
+.commande-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.commande-card {
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.commande-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.commande-card i {
+    font-size: 3em;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.commande-card h3 {
+    font-size: 1.5em;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.commande-card p {
+    font-size: 1em;
+    color: #666;
+}
+.commande-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.commande-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    color: #d4af37; /* Changer la couleur du texte au survol */
+}
+/* Style pour le bouton moderne */
+.button-modern {
+    display: inline-block;
+    background: linear-gradient(45deg, #d4af37, #f9d423);
+    color: #2a2a2a;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button-modern:hover {
+    background: linear-gradient(45deg, #f9d423, #d4af37);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button-modern:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Espacement global pour les sections */
+section {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 1200px;
+}
+
+/* Section Récompenses */
+.recompenses table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.recompenses th,
+.recompenses td {
+    padding: 15px;
+}
+
+.recompenses th {
+    background: rgba(212, 175, 55, 0.9);
+}
+
+.recompenses tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Section Timeline */
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.timeline-item {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-item h3 {
+    font-size: 2em;
+    color: #d4af37;
+}
+
+/* Section Qui nous sommes */
+.values-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.values-container div {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.values-container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.values-container h3 {
+    font-size: 1.5em;
+    color: #d4af37;
+}
+
+.values-container p {
+    font-size: 1em;
+    color: #f9f9f9;
+}
+
+/* Centrage et alignement du formulaire */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement uniforme entre les champs */
+}
+
+/* Champs de saisie */
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2a2a2a;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Bouton d'envoi */
+.contact-form button {
+    width: 100%;
+    background: #d4af37;
+    color: #2a2a2a;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #2a2a2a;
+    color: #d4af37;
+    transform: translateY(-3px);
+}
+
