@@ -1,6 +1,6 @@
 /* Image de fond globale */
 body {
-    background-image: url('../images/image.png'); /* Mise à jour du chemin vers l'image */
+    background-image: url('/Fournil_Project/images/image.png'); /* Mise à jour du chemin vers l'image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
